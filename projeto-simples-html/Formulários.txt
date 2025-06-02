@@ -1,0 +1,22 @@
+Caixa para nome e sobrenome
+<table>
+ <tr>
+   <td>Nome:</td>
+   <td><input type="text" name="nome" size="40"> <br /></td>
+ </tr>
+ <tr>
+   <td>Sobrenome:</td>
+   <td><input type="text" name="sobrenome" size="40"> <br /></td>
+ </tr>
+</table>
+
+
+
+CEP
+<input type="text" name="cep" size="5" maxlength="5"> - <input type="text" name="cep2" size="3"maxlength= "3">
+
+
+Data de nascimento
+<input type="text" name="dia" size="2" maxlength="2" value="dd"> 
+<input type="text" name="mes" size="2" maxlength="2" value="mm"> 
+<input type="text" name="ano" size="4" maxlength="4" value="aaaa">

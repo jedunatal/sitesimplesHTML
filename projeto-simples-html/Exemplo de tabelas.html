@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+
+    <style>
+        table, td, th {
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+        
+        /*th célula do cabeçalho, td célula dos registros*/
+        th, td {
+            padding: 5px 20px;
+        }
+        
+        /*Back cor de fundo, color cor do texto*/
+        th {
+            background-color: blue;
+            color: white;
+        }
+
+
+        * {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        /*odd todos os elementos impar*/
+        table tr:nth-child(odd) {
+            background-color: #ddd;
+        }
+
+        /*even todos os elementos par*/
+        table tr:nth-child(even) {
+            background-color: white;
+        }
+    </style>
+</head>
+<body>
+    <h1>Tabelas</h1>
+    <h3>Tabela Normal</h3>
+    <table>
+        <tr>
+            <th>Nome</th>
+            <th>Idade</th>
+            <th>Telefone</th>
+        </tr>
+        <tr>
+            <td>João</td>
+            <td>29</td>
+            <td>(00) 99999-9999</td>
+        </tr>
+        <tr>
+            <td>Paulo</td>
+            <td>45</td>
+            <td>(00) 99999-9999</td>
+        </tr>
+        <tr>
+            <td>Fernanda</td>
+            <td>29</td>
+            <td>(00) 99999-9999</td>
+        </tr>
+        <tr>
+            <td>Lara</td>
+            <td>29</td>
+            <td>(00) 99999-9999</td>
+        </tr>
+    </table>
+    <h3>Tabela com colspan</h3>
+    <table>
+        <tr>
+            <th>Nome</th>
+            <th>Idade</th>
+            <th colspan="2">Telefone</th>
+        </tr>
+        <tr>
+            <td>João</td>
+            <td>29</td>
+            <td>(00) 99999-9999</td>
+            <td>(00) 99999-9999</td>
+        </tr>
+        <tr>
+            <td>Paulo</td>
+            <td>45</td>
+            <td>(00) 99999-9999</td>
+            <td>(00) 99999-9999</td>
+        </tr>
+    </table>
+
+    <h3>Tabela com Rowspan</h3>
+    <table>
+        <tr>
+            <td>Sexo</td>
+            <th>Nome</th>
+            <th>Idade</th>
+            <th colspan="2">Telefone</th>
+        </tr>
+        <tr>
+            <td rowspan="2">M</td>
+            <td>João</td>
+            <td>29</td>
+            <td>(00) 99999-9999</td>
+            <td>(00) 99999-9999</td>
+        </tr>
+        <tr>
+           
+            <td>Paulo</td>
+            <td>45</td>
+            <td>(00) 99999-9999</td>
+            <td>(00) 99999-9999</td>
+        </tr>
+        <tr>
+            <td>F</td>
+            <td>Fernanda</td>
+            <td>45</td>
+            <td>(00) 99999-9999</td>
+            <td>(00) 99999-9999</td>
+        </tr>
+    </table>
+</body>
+</html>
